@@ -133,7 +133,7 @@ small{
     box-shadow: 0 0.8rem 0.8rem rgb(0, 0, 0, 0.2);
 }
 
-/* Nav Bar*/
+/* Nav Bar - Barra de Navegação*/
 
 nav{
     width: 100%;
@@ -227,7 +227,7 @@ nav .profile-area button{
     display: none;
 }
 
-/* Anside & sidebar */
+/* Anside & sidebar - Lado e Barra lateral */
 
 main{
     display: grid;
@@ -288,7 +288,7 @@ main aside .sidebar a h4{
     font-weight: 500;
 }
 
-/* Updates */
+/* Updates - Atualizações */
 
 main aside .updates{
     background: var(--color-white);
@@ -320,7 +320,7 @@ main aside .updates a:hover{
     box-shadow: 0 1rem 2rem var(--color-primary-light);
 }
 
-/* Middle */
+/* Middle - Meio */
 
 main section.middle .header{
     display: flex;
@@ -353,6 +353,7 @@ main section.middle .cards .card{
     justify-content: space-between;
     box-shadow: 0 2rem 3rem var(--color-danger-light);
     transition: all 300ms ease;
+    min-width: 24rem;
 }
 
 main section.middle .cards .card:nth-child(2){
@@ -418,7 +419,7 @@ main section.middle .card .bottom .right{
     gap: 2rem;
 }
 
-/* Monthly Report*/
+/* Monthly Report - Relatório Mensal*/
 
 main section .monthly-report{
     display: grid;
@@ -433,11 +434,68 @@ main section .monthly-report h1{
     font-size: 1.5rem;
 }
 
-/* Fast Payment*/
+/* Fast Payment - Pagamento Rápido*/
 
 main section .fast-payment{
-    background-color: green;
+    margin-top: 2rem;
+    display: flex;
+    align-self: center;
+    gap: 2rem;
 }
+
+main section .fast-payment .badges{
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+main section .fast-payment .badge span{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+main section .fast-payment .badge{
+    background: var(--color-white);
+    padding: 0.6rem var(--card-padding);
+    border-radius: var(--border-radius-2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 300ms ease;
+}
+
+main section .fast-payment .badge:hover{
+    box-shadow: 0 0 1.5rem var(--color-primary-light);
+    cursor: pointer;
+}
+
+main section .fast-payment .badge:first-child span{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+main section .fast-payment .badge div{
+    display: flex;
+    align-self: center;
+    gap: 2rem;
+}
+
+/* Canvas - Tela */
+
+main section canvas#chart{
+    background: var(--color-white);
+    max-width: 100%;
+    margin-top: 2rem;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+
 
 
 
