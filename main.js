@@ -30,3 +30,27 @@ new Chart(chart, {
     }
 })
 
+// show or hide sidebar - Mostrar ou ocultar a barra lateral
+
+const menuBtn = document.querySelector('#menu-btn');
+const closeBtn = document.querySelector('#close-btn');
+const sidebar = document.querySelector('aside');
+
+menuBtn.addEventListener('click', () => {
+    sidebar.style.display = 'block';
+})
+
+closeBtn.addEventListener('click', () => {
+    sidebar.style.display = 'none';
+})
+
+// Change Theme - Mudar Tema 
+
+const themeBtn = document.querySelector('.theme-btn');
+
+themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme')
+})
+
+
+
